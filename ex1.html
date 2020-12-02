@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>SHIFT Robot</title>
+
+		<style>
+		body {
+			text-align: center;
+			background: url("image.png");
+			background-size: cover;
+			background-position: center;
+			color: white;
+			font-family: Helvetica;
+		}
+
+		p {
+			font-size: 22px;
+		}
+
+		input {
+			border: 0;
+			padding: 10px;
+			font-size: 18px;
+		}
+
+		button {
+			font-size: 18px;
+			padding: 8px;
+			background: red;
+			color: white;
+		}
+
+		</style>
+	</head>
+
+	<body>
+
+		<img src="robot.jpg" alt="robot image">
+		<p>Hi, I am SHIFT Robot. What is your name?</p>
+		<input type="text" id="myText" placeholder="Your name">
+		<button onclick="myFunction()">Submit</button>
+		
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myText").value;
+				alert("Hello " + x + "!");
+			}
+		</script>
+
+    </body>
+</html>
+
